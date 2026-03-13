@@ -25,6 +25,8 @@ const Index = () => {
       <SectionDivider />
       <EducationSection />
       <SectionDivider />
+      <ExperienceSection />
+      <SectionDivider />
       <SkillsSection />
       <SectionDivider />
       <ProjectsSection />

@@ -145,7 +145,7 @@ const HeroSection = () => {
             </span>
           </div>
           <p className="text-muted-foreground max-w-lg mb-8 leading-relaxed">
-            Navigating the path with code and creativity. Building modern web apps, exploring AI/ML, and creating impactful solutions.
+            Data Engineer & AI/ML Engineer building modern web apps, data pipelines, and intelligent systems that solve real-world problems.
           </p>
 
           <div className="flex gap-4 mb-8">

@@ -6,34 +6,62 @@ const skillCategories = [
     skills: [
       { name: "Python", level: 85 },
       { name: "Java", level: 70 },
-      { name: "C", level: 65 },
+      { name: "JavaScript", level: 80 },
+      { name: "PHP", level: 60 },
+      { name: "SQL", level: 75 },
     ],
   },
   {
-    title: "Web Technologies",
+    title: "Web Development",
     skills: [
-      { name: "HTML", level: 90 },
-      { name: "CSS", level: 85 },
-      { name: "JavaScript", level: 80 },
+      { name: "HTML & CSS", level: 90 },
+      { name: "React.js", level: 75 },
       { name: "Tailwind CSS", level: 80 },
       { name: "Bootstrap", level: 75 },
-    ],
-  },
-  {
-    title: "Tools & Frameworks",
-    skills: [
-      { name: "Git & GitHub", level: 80 },
+      { name: "Node.js", level: 65 },
+      { name: "REST APIs", level: 75 },
       { name: "Flask", level: 75 },
-      { name: "Docker", level: 55 },
     ],
   },
   {
-    title: "Database & Core",
+    title: "AI / ML & Data",
+    skills: [
+      { name: "TensorFlow & Keras", level: 70 },
+      { name: "Scikit-learn", level: 70 },
+      { name: "OpenCV", level: 70 },
+      { name: "NumPy & Pandas", level: 75 },
+      { name: "Matplotlib & Seaborn", level: 65 },
+      { name: "NLP", level: 65 },
+    ],
+  },
+  {
+    title: "Data Engineering",
     skills: [
       { name: "MySQL", level: 75 },
+      { name: "MongoDB", level: 60 },
+      { name: "ETL Pipelines", level: 60 },
+      { name: "Power BI", level: 55 },
+      { name: "Jupyter Notebook", level: 80 },
+    ],
+  },
+  {
+    title: "Tools & DevOps",
+    skills: [
+      { name: "Git & GitHub", level: 80 },
+      { name: "Docker", level: 55 },
+      { name: "Postman", level: 70 },
+      { name: "VS Code", level: 90 },
+      { name: "Linux", level: 60 },
+    ],
+  },
+  {
+    title: "Core Concepts",
+    skills: [
       { name: "OOP", level: 80 },
-      { name: "Data Structures", level: 75 },
-      { name: "AI / ML", level: 70 },
+      { name: "DSA", level: 75 },
+      { name: "Machine Learning", level: 70 },
+      { name: "Deep Learning", level: 65 },
+      { name: "Agile", level: 70 },
     ],
   },
 ];
