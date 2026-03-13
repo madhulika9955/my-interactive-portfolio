@@ -42,8 +42,9 @@ const AboutSection = () => (
             and developed web systems like Online Voting and HealthTrackM.
           </p>
           <p>
-            Currently interning as a <span className="text-primary font-semibold">Frontend Developer at Happieloop Technologies</span>,
-            building responsive interfaces with HTML, CSS, JavaScript, and Tailwind CSS.
+            Professionally, I've interned as a <span className="text-primary font-semibold">Software Development Engineer at Bluestock Fintech</span> building
+            RESTful APIs for fintech features, and as a <span className="text-primary font-semibold">Frontend Developer at Happieloop Technologies</span> crafting
+            responsive interfaces with modern web technologies.
           </p>
         </motion.div>
 

@@ -4,7 +4,7 @@ import { ArrowDown, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImg from "@/assets/profile.jpeg";
 
-const roles = ["Web Developer", "AI/ML Enthusiast", "B.Tech Student", "Problem Solver"];
+const roles = ["Data Engineer", "AI/ML Engineer", "Web Developer", "Full Stack Developer"];
 
 const CountUp = ({ target, suffix = "" }: { target: number; suffix?: string }) => {
   const [count, setCount] = useState(0);
@@ -145,7 +145,7 @@ const HeroSection = () => {
             </span>
           </div>
           <p className="text-muted-foreground max-w-lg mb-8 leading-relaxed">
-            Navigating the path with code and creativity. Building modern web apps, exploring AI/ML, and creating impactful solutions.
+            Data Engineer & AI/ML Engineer building modern web apps, data pipelines, and intelligent systems that solve real-world problems.
           </p>
 
           <div className="flex gap-4 mb-8">
@@ -243,7 +243,7 @@ const HeroSection = () => {
               style={{ transform: "translateZ(40px)" }}
               whileHover={{ scale: 1.1 }}
             >
-              <p className="text-sm font-mono"><span className="text-cosmic"><CountUp target={5} suffix="+" /></span> Hackathons</p>
+              <p className="text-sm font-mono"><span className="text-cosmic"><CountUp target={2} suffix="+" /></span> Internships</p>
             </motion.div>
             <motion.div
               className="absolute top-1/2 -right-16 bg-card border border-border rounded-2xl px-4 py-3 backdrop-blur-sm"
@@ -252,7 +252,7 @@ const HeroSection = () => {
               style={{ transform: "translateZ(30px)" }}
               whileHover={{ scale: 1.1 }}
             >
-              <p className="text-sm font-mono"><span className="text-nebula"><CountUp target={8} suffix="+" /></span> Certs</p>
+              <p className="text-sm font-mono"><span className="text-nebula"><CountUp target={5} suffix="+" /></span> Hackathons</p>
             </motion.div>
           </motion.div>
         </motion.div>

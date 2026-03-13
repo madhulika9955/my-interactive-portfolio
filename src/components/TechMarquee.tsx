@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 
 const techs = [
-  "Python", "Java", "JavaScript", "HTML5", "CSS3", "React", "Flask", 
-  "Tailwind CSS", "MySQL", "Docker", "Git", "OpenCV", "TensorFlow",
-  "Bootstrap", "Node.js", "AI / ML", "NLP", "Data Structures",
+  "Python", "Java", "JavaScript", "PHP", "SQL", "HTML5", "CSS3", "React.js",
+  "Flask", "Node.js", "Tailwind CSS", "Bootstrap", "REST APIs", "MySQL", "MongoDB",
+  "Docker", "Git", "OpenCV", "TensorFlow", "Keras", "Scikit-learn", "NumPy",
+  "Pandas", "Power BI", "NLP", "Deep Learning", "Postman", "Linux", "Agile",
 ];
 
 const TechMarquee = () => (
