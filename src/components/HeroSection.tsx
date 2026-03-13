@@ -243,7 +243,7 @@ const HeroSection = () => {
               style={{ transform: "translateZ(40px)" }}
               whileHover={{ scale: 1.1 }}
             >
-              <p className="text-sm font-mono"><span className="text-cosmic"><CountUp target={5} suffix="+" /></span> Hackathons</p>
+              <p className="text-sm font-mono"><span className="text-cosmic"><CountUp target={2} suffix="+" /></span> Internships</p>
             </motion.div>
             <motion.div
               className="absolute top-1/2 -right-16 bg-card border border-border rounded-2xl px-4 py-3 backdrop-blur-sm"
@@ -252,7 +252,7 @@ const HeroSection = () => {
               style={{ transform: "translateZ(30px)" }}
               whileHover={{ scale: 1.1 }}
             >
-              <p className="text-sm font-mono"><span className="text-nebula"><CountUp target={8} suffix="+" /></span> Certs</p>
+              <p className="text-sm font-mono"><span className="text-nebula"><CountUp target={5} suffix="+" /></span> Hackathons</p>
             </motion.div>
           </motion.div>
         </motion.div>
