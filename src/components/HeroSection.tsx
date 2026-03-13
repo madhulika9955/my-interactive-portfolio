@@ -4,7 +4,7 @@ import { ArrowDown, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImg from "@/assets/profile.jpeg";
 
-const roles = ["Web Developer", "AI/ML Enthusiast", "B.Tech Student", "Problem Solver"];
+const roles = ["Data Engineer", "AI/ML Engineer", "Web Developer", "Full Stack Developer"];
 
 const CountUp = ({ target, suffix = "" }: { target: number; suffix?: string }) => {
   const [count, setCount] = useState(0);
