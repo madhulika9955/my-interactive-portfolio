@@ -6,6 +6,7 @@ import TechMarquee from "@/components/TechMarquee";
 import AboutSection from "@/components/AboutSection";
 import SectionDivider from "@/components/SectionDivider";
 import EducationSection from "@/components/EducationSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import CertificatesSection from "@/components/CertificatesSection";
