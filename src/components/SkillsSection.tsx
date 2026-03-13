@@ -60,27 +60,39 @@ const SkillsSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: ci * 0.1 }}
-            className="bg-card border border-border rounded-xl p-6"
+            whileHover={{ scale: 1.02 }}
+            className="bg-card border border-border rounded-xl p-6 group hover:border-primary/30 transition-colors duration-300"
           >
             <h3 className="text-lg font-semibold mb-5 text-primary font-mono">{`// ${cat.title}`}</h3>
             <div className="space-y-4">
               {cat.skills.map((skill, si) => (
-                <div key={skill.name}>
+                <div key={skill.name} className="group/skill">
                   <div className="flex justify-between text-sm mb-1.5">
-                    <span>{skill.name}</span>
+                    <span className="group-hover/skill:text-primary transition-colors">{skill.name}</span>
                     <span className="text-muted-foreground font-mono">{skill.level}%</span>
                   </div>
-                  <div className="h-2 bg-secondary rounded-full overflow-hidden">
+                  <div className="h-2.5 bg-secondary rounded-full overflow-hidden relative">
                     <motion.div
-                      className="h-full rounded-full"
+                      className="h-full rounded-full relative"
                       style={{
                         background: `linear-gradient(90deg, hsl(var(--primary)), hsl(var(--nebula)))`,
                       }}
                       initial={{ width: 0 }}
                       whileInView={{ width: `${skill.level}%` }}
                       viewport={{ once: true }}
-                      transition={{ duration: 1, delay: si * 0.1 }}
-                    />
+                      transition={{ duration: 1.2, delay: si * 0.1, ease: "easeOut" }}
+                    >
+                      {/* Shimmer effect */}
+                      <motion.div
+                        className="absolute inset-0 rounded-full"
+                        style={{
+                          background: "linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.15) 50%, transparent 100%)",
+                          backgroundSize: "200% 100%",
+                        }}
+                        animate={{ backgroundPosition: ["200% 0%", "-200% 0%"] }}
+                        transition={{ duration: 2, repeat: Infinity, delay: 1 + si * 0.1 }}
+                      />
+                    </motion.div>
                   </div>
                 </div>
               ))}

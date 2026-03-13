@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Code, Brain, Globe, Shield } from "lucide-react";
 
 const highlights = [
-  { icon: Code, label: "Web Development", desc: "Building responsive, modern UIs" },
-  { icon: Brain, label: "AI / ML", desc: "Image processing & NLP projects" },
-  { icon: Globe, label: "Full Stack", desc: "Flask, MySQL, JavaScript" },
-  { icon: Shield, label: "Cybersecurity", desc: "Certified in security essentials" },
+  { icon: Code, label: "Web Development", desc: "Building responsive, modern UIs", color: "text-primary", bg: "bg-primary/10" },
+  { icon: Brain, label: "AI / ML", desc: "Image processing & NLP projects", color: "text-cosmic", bg: "bg-cosmic/10" },
+  { icon: Globe, label: "Full Stack", desc: "Flask, MySQL, JavaScript", color: "text-nebula", bg: "bg-nebula/10" },
+  { icon: Shield, label: "Cybersecurity", desc: "Certified in security essentials", color: "text-primary", bg: "bg-primary/10" },
 ];
 
 const AboutSection = () => (
@@ -61,9 +61,12 @@ const AboutSection = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-card border border-border rounded-xl p-5 card-hover cursor-default"
+              whileHover={{ scale: 1.05, y: -5 }}
+              className="bg-card border border-border rounded-xl p-5 cursor-default group"
             >
-              <item.icon className="h-8 w-8 text-primary mb-3" />
+              <div className={`w-12 h-12 ${item.bg} rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
+                <item.icon className={`h-6 w-6 ${item.color}`} />
+              </div>
               <h3 className="font-semibold text-sm mb-1">{item.label}</h3>
               <p className="text-xs text-muted-foreground">{item.desc}</p>
             </motion.div>
